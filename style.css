@@ -38,11 +38,16 @@ button {
   border-radius: 1px;
   font-weight: 500;
   user-select: none;
-  background-color: #eee;
+  background-color: #e0e0e0;
+  transition: background-color 0.42s;
 }
 
 button:focus {
   outline: none;
+}
+
+button:hover {
+  background-color: #ededed;
 }
 
 .button-row button {
@@ -58,4 +63,66 @@ button:focus {
   h2 {
     font-size: 1.42em;
   }
+}
+
+.linkedin {
+  background-color: #0e76a8;
+  color: white;
+}
+
+.linkedin:hover {
+  background-color: #1699d9;
+}
+
+.instagram {
+  background: #8a3ab9;
+  color: white;
+}
+
+.instagram:hover {
+  background-color: #a54ed9;
+}
+
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.facebook:hover {
+  background-color: #5279cc;
+}
+
+.youtube {
+  background: #c4302b;
+  color: white;
+}
+
+.youtube:hover {
+  background-color: #d63933;
+}
+
+.github {
+  background: #333333;
+  color: white;
+}
+
+.github:hover {
+  background-color: #4f4f4f;
+}
+
+.twitter {
+  background: #1da1f2;
+  color: white;
+}
+
+.twitter:hover {
+  background-color: #47b9ff;
+}
+
+.email {
+  background: #e0e0e0;
+}
+
+.email:hover {
+  background-color: #ededed;
 }
