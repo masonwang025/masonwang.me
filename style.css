@@ -25,11 +25,15 @@ img {
 h1 {
   font-family: Montserrat;
   font-weight: 800;
-  font-size: 4.2em;
+  font-size: 3em;
 }
 
 h1 span {
   color: #a30303;
+}
+
+h3 {
+  line-height: 125%;
 }
 
 button {
