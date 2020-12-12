@@ -2,4 +2,4 @@
 
 My personal website.
 
-Contact: [hello@masonwang.me](mailto:mason@masonwang.me)
+Contact: [mason@masonwang.me](mailto:mason@masonwang.me)
