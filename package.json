@@ -1,0 +1,23 @@
+{
+  "name": "masonwang.me",
+  "version": "1.0.0",
+  "description": "My personal website.",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasonWang025/masonwang.me.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MasonWang025/masonwang.me/issues"
+  },
+  "homepage": "https://github.com/MasonWang025/masonwang.me#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.7"
+  }
+}
