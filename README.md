@@ -1,4 +1,4 @@
-# [website](masonwang.me)
+# [website](http://masonwang.me)
 
 My personal website.
 
