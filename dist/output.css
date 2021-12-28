@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /*
 ! tailwindcss v3.0.7 | MIT License | https://tailwindcss.com
@@ -591,19 +591,35 @@ select{
   outline: 1px auto -webkit-focus-ring-color;
 }
 
-.text-red-100{
-  --tw-text-opacity: 1;
-  color: rgb(254 226 226 / var(--tw-text-opacity));
+.min-h-screen{
+  min-height: 100vh;
 }
 
-.text-red-700{
-  --tw-text-opacity: 1;
-  color: rgb(185 28 28 / var(--tw-text-opacity));
+.rounded{
+  border-radius: 0.25rem;
 }
 
-.text-red-500{
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-black{
+  font-weight: 900;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.text-mw-dark-primary{
   --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+  color: rgb(93 0 30 / var(--tw-text-opacity));
 }
 
 .outline{
@@ -629,16 +645,6 @@ p .underline-effect {
 }
 
 /*-------------------------------*/
-
-.dark-link{
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgb(5 32 61 / var(--tw-text-opacity));
-}
-
-.dark-link:hover{
-  color: ##02101f;
-}
 
 .pcontainer{
   padding-left: 1rem;
@@ -721,7 +727,9 @@ input::placeholder{
 
 /*-------------------------------*/
 
-body {
+body{
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 226 223 / var(--tw-bg-opacity));
   -ms-scroll-chaining: none;
       overscroll-behavior: contain;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -733,11 +741,9 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.krona-one {
-  letter-spacing: -0.025em;
-  font-family: "Krona One", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
+h6 {
+  font-family: "Mukta", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
@@ -748,11 +754,11 @@ h6,
 }
 
 *::-moz-selection {
-  background-color: #b691d969;
+  background-color: #a5365769;
 }
 
 *::selection {
-  background-color: #b691d969;
+  background-color: #a5365769;
 }
 
 button,
@@ -780,20 +786,44 @@ button.active.focus {
 
 /* Track */
 
-::-webkit-scrollbar-track {
-  background: #0c3057;
+::-webkit-scrollbar-track{
+  --tw-bg-opacity: 1;
+  background-color: rgb(93 0 30 / var(--tw-bg-opacity));
 }
 
 /* Handle */
 
-::-webkit-scrollbar-thumb {
-  background: #a880ce;
-  -webkit-transition: all 0.55s ease;
-  transition: all 0.55s ease;
+::-webkit-scrollbar-thumb{
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 0 68 / var(--tw-bg-opacity));
+  -webkit-transition-property: all;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 /* Handle on hover */
 
-::-webkit-scrollbar-thumb:hover {
-  background: #b691d9;
+::-webkit-scrollbar-thumb:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(189 0 56 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px){
+  .md\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:text-7xl{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
 }
