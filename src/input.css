@@ -28,10 +28,14 @@ p .underline-effect {
   @apply inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-sm odd:uppercase shadow-sm trans-150 bg-mw-dark-brighter hover:bg-mw-dark-primary text-white focus:outline-none;
 }
 
+.secondary-button {
+  @apply inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-sm odd:uppercase shadow-sm trans-150 bg-mw-bg-darker hover:bg-mw-bg-darkest text-mw-dark-primary focus:outline-none;
+}
+
 /*-------------------------------*/
 
 .pcontainer {
-  @apply xl:px-16 px-4 sm:px-6 lg:px-8 2xl:px-20;
+  @apply xl:px-16 px-1 sm:px-2 lg:px-8 2xl:px-20;
 }
 
 .trans {

@@ -10,6 +10,7 @@ module.exports = {
         mw: {
           bg: {
             primary: "#E3E2Df",
+            darker: "#c9c8c5",
             darkest: "#E3AFBC",
           },
           accent: {

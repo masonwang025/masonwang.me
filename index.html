@@ -28,13 +28,13 @@
     <section id="hero" class="flex min-h-screen pcontainer align-middle">
       <div class="flex flex-col space-y-5 md:space-y-0 md:flex-row m-auto">
         <div class="w-1/3 lg:w-1/4 m-auto">
-            <img
-              src="/assets/img/pfp.jpg"
-              alt="mason wang"
-              class="rounded mx-auto block"
-              height="200"
-              width="200"
-            />
+          <img
+            src="/assets/img/pfp.jpg"
+            alt="mason wang"
+            class="rounded mx-auto block"
+            height="200"
+            width="200"
+          />
         </div>
         <div
           class="
@@ -80,73 +80,106 @@
             </p>
           </div>
           <div>
-            <a href="#contact" class="button primary-button"
-              >Contact Me</a
-            >
+            <a href="#contact" class="button primary-button">Contact Me</a>
           </div>
         </div>
       </div>
     </section>
 
-    <hr />
     <!-- research -->
-    <section id="research">
-      <h1>Research</h1>
-      <h2>Sparse Fusion for Multimodal Transformers</h2>
-      <p>
-        Yi Ding*<sup>1</sup>, Alex Rich*<sup>1</sup>, <b>Mason Wang</b
-        ><sup>2</sup>, Noah Stier<sup>1</sup>, Matthew Turk<sup>3</sup>, Pradeep
-        Sen<sup>1</sup>, Tobias Höllerer<sup>1</sup>
-        <br />
-        <sup>1</sup>UC Santa Barbara, <sup>2</sup>Saratoga High School,
-        <sup>3</sup>Toyota Technological Institute at Chicago
-      </p>
-      <p>
-        We present Sparse Fusion Transformers (SFT), a novel multimodal fusion
-        method for transformers that performs comparably to existing
-        state-of-the-art methods while demonstrating up to a six-fold reduction
-        in computation and memory requirements.
-      </p>
-      <p><i>Currently under review.</i></p>
-      <a href="https://arxiv.org/abs/2111.11992">View paper</a>
-
-      <h2>
-        Interpolating Latent Representations to Increase Label Noise Tolerance
-      </h2>
-      <p>
-        <b>Mason Wang</b><sup>1</sup>, Yi Ding<sup>2</sup>
-        <br />
-        <sup>1</sup>Saratoga High School, <sup>2</sup>UC Santa Barbara
-      </p>
-      <p>
-        We propose the use of a modality-agnostic label noise tolerant technique
-        involving training on interpolated latent representations along with
-        their labels, encouraging neural networks to predict less confidently on
-        these in-between examples. Our technique reduces the memorization of
-        corrupt labels, which can alleviate the issue of noisy labels.
-      </p>
-      <a href="/assets/files/rmp-paper.pdf">View paper</a>
-      <h2>
-        CLEFNET: Recurrent Autoencoders with Dynamic Time Warping for
-        Near-Lossless Music Compression and Minimal-Latency Transmission
-      </h2>
-      <p>
-        Vignav Ramesh*<sup>1</sup>, <b>Mason Wang</b>*<sup>1</sup>
-        <br />
-        <sup>1</sup>Saratoga High School
-        <br />
-        <i>(authors contributed equally)</i>
-      </p>
-      <p>
-        We propose an architecture (Latent Space) for a platform with
-        end-to-end, near-lossless audio transmission tailored specifically to
-        online joint music production. We discuss the usage of a recurrent
-        autoencoder (ClefNet), propose a new evaluation metric (MSE-DTW), and
-        detail the logistics of a live system implementation.
-      </p>
-      <a href="https://www.preprints.org/manuscript/202103.0360/v1"
-        >View Paper</a
-      >
+    <section id="research" class="bg-mw-bg-darker">
+      <div class="pcontainer mx-auto py-10 lg:py-14">
+        <div class="bg-mw-bg-primary rounded-sm py-4 text-center">
+          <h1
+            class="
+              text-2xl
+              md:text-3xl
+              uppercase
+              font-bold
+              text-mw-dark-brighter
+            "
+          >
+            Research
+          </h1>
+        </div>
+        <div class="flex flex-col space-y-2 mt-6">
+          <div id="sft">
+            <div class="bg-mw-bg-primary rounded-sm px-3 py-3">
+              <h2
+                class="text-xl md:text-2xl font-semibold text-mw-dark-brighter"
+              >
+                Sparse Fusion for Multimodal Transformers
+              </h2>
+              <p class="text-sm">
+                Yi Ding*<sup>1</sup>, Alex Rich*<sup>1</sup>, <b>Mason Wang</b
+                ><sup>2</sup>, Noah Stier<sup>1</sup>, Matthew Turk<sup>3</sup>,
+                Pradeep Sen<sup>1</sup>, Tobias Höllerer<sup>1</sup>
+                <br />
+                <sup>1</sup>UC Santa Barbara, <sup>2</sup>Saratoga High School,
+                <sup>3</sup>Toyota Technological Institute at Chicago
+              </p>
+            </div>
+            <div class="bg-mw-bg-primary rounded-sm px-3 py-3 mt-2">
+              <p>
+                We present Sparse Fusion Transformers (SFT), a novel multimodal
+                fusion method for transformers that performs comparably to
+                existing state-of-the-art methods while demonstrating up to a
+                six-fold reduction in computation and memory requirements.
+              </p>
+              <p><i>Currently under review.</i></p>
+              <a 
+                class="button secondary-button mt-3"
+                href="https://arxiv.org/abs/2111.11992"
+                >View paper</a
+              >
+            </div>
+          </div>
+          <div id="lrm" class="mt-6">
+            <h2>
+              Interpolating Latent Representations to Increase Label Noise
+              Tolerance
+            </h2>
+            <p>
+              <b>Mason Wang</b><sup>1</sup>, Yi Ding<sup>2</sup>
+              <br />
+              <sup>1</sup>Saratoga High School, <sup>2</sup>UC Santa Barbara
+            </p>
+            <p>
+              We propose the use of a modality-agnostic label noise tolerant
+              technique involving training on interpolated latent
+              representations along with their labels, encouraging neural
+              networks to predict less confidently on these in-between examples.
+              Our technique reduces the memorization of corrupt labels, which
+              can alleviate the issue of noisy labels.
+            </p>
+            <a href="/assets/files/rmp-paper.pdf">View paper</a>
+          </div>
+          <div id="clefnet" class="mt-6">
+            <h2>
+              CLEFNET: Recurrent Autoencoders with Dynamic Time Warping for
+              Near-Lossless Music Compression and Minimal-Latency Transmission
+            </h2>
+            <p>
+              Vignav Ramesh*<sup>1</sup>, <b>Mason Wang</b>*<sup>1</sup>
+              <br />
+              <sup>1</sup>Saratoga High School
+              <br />
+              <i>(authors contributed equally)</i>
+            </p>
+            <p>
+              We propose an architecture (Latent Space) for a platform with
+              end-to-end, near-lossless audio transmission tailored specifically
+              to online joint music production. We discuss the usage of a
+              recurrent autoencoder (ClefNet), propose a new evaluation metric
+              (MSE-DTW), and detail the logistics of a live system
+              implementation.
+            </p>
+            <a href="https://www.preprints.org/manuscript/202103.0360/v1"
+              >View Paper</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
 
     <hr />
