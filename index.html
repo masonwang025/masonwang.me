@@ -25,18 +25,32 @@
   </head>
   <body>
     <!-- hero -->
-    <section id="hero" class="flex min-h-screen">
-      <div class="flex flex-col space-y-5 md:space-y-0 md:flex-row container m-auto">
-        <div class="w-1/3 mx-auto">
-          <img
-            src="/assets/img/pfp.jpg"
-            alt="mason wang"
-            class="rounded mx-auto block"
-            height="200"
-            width="200"
-          />
+    <section id="hero" class="flex min-h-screen pcontainer align-middle">
+      <div class="flex flex-col space-y-5 md:space-y-0 md:flex-row m-auto">
+        <div class="w-1/3 lg:w-1/4 m-auto">
+            <img
+              src="/assets/img/pfp.jpg"
+              alt="mason wang"
+              class="rounded mx-auto block"
+              height="200"
+              width="200"
+            />
         </div>
-        <div class="w-2/3 flex flex-col text-center md:text-left my-auto space-y-2 mx-auto">
+        <div
+          class="
+            md:w-2/3
+            lg:w-3/4
+            flex flex-col
+            text-center
+            md:text-left
+            space-y-3
+            md:space-y-3
+            mx-auto
+            align-middle
+            my-auto
+            justify-center
+          "
+        >
           <div>
             <h1
               class="
@@ -52,7 +66,8 @@
           </div>
           <div>
             <h2 class="text-2xl md:text-3xl font-bold">
-              Hi, I am a junior at Saratoga High School and am currently focused on ML research.
+              Hi, I am a junior at Saratoga High School and am currently focused
+              on ML research.
             </h2>
           </div>
           <div>
@@ -64,12 +79,16 @@
               leadership activities and currently serve as the ASB secretary.
             </p>
           </div>
+          <div>
+            <a href="#contact" class="button primary-button"
+              >Contact Me</a
+            >
+          </div>
         </div>
       </div>
     </section>
 
     <hr />
-
     <!-- research -->
     <section id="research">
       <h1>Research</h1>

@@ -21,6 +21,13 @@ p .underline-effect {
   background-size: 100% 0.42em;
 }
 
+.button {
+@apply inline-flex items-center border border-transparent uppercase shadow-sm trans-150 focus:outline-none;}
+
+.primary-button {
+  @apply inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-sm odd:uppercase shadow-sm trans-150 bg-mw-dark-brighter hover:bg-mw-dark-primary text-white focus:outline-none;
+}
+
 /*-------------------------------*/
 
 .pcontainer {
@@ -56,6 +63,14 @@ body {
   overscroll-behavior: contain;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.pcontainer {
+  @apply px-8 sm:px-10 lg:px-20 xl:px-24 2xl:px-32;
 }
 
 h1,
