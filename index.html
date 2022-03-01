@@ -1,13 +1,32 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Hi, I'm Mason Wang." />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta
+      name="description"
+      content="Hi, my name is Mason Wang."
+    />
+    <meta property="og:url" content="https://masonwang.me" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" type="image/ico" href="img/mason.ico" />
+
     <title>Mason Wang</title>
-
-    <link rel="stylesheet" href="/dist/output.css" />
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -24,369 +43,93 @@
     </script>
   </head>
   <body>
-    <!-- hero -->
-    <section id="hero" class="flex min-h-screen pcontainer align-middle">
-      <div class="flex flex-col space-y-5 md:space-y-0 md:flex-row m-auto">
-        <div class="w-1/3 lg:w-1/4 m-auto">
+    <div class="page-container container h-100 text-center text-md-left">
+      <div class="row h-100 justify-content-center align-items-center py-5">
+        <div class="col-md-3 col-7 col-sm-6 mx-2 mb-4 mb-md-0">
           <img
-            src="/assets/img/pfp.jpg"
-            alt="mason wang"
-            class="rounded mx-auto block"
-            height="200"
-            width="200"
+            src="img/pfp.png"
+            class="rounded-circle img-fluid"
+            alt="Mason Wang"
           />
         </div>
-        <div
-          class="
-            md:w-2/3
-            lg:w-3/4
-            flex flex-col
-            text-center
-            md:text-left
-            space-y-3
-            md:space-y-3
-            mx-auto
-            align-middle
-            my-auto
-            justify-center
-          "
-        >
-          <div>
-            <h1
-              class="
-                text-5xl
-                md:text-6xl
-                lg:text-7xl
-                font-black
-                text-mw-dark-brighter
-              "
-            >
-              Mason Wang
-            </h1>
-          </div>
-          <div>
-            <h2 class="text-2xl md:text-3xl font-bold">
-              Hi, I am a junior at Saratoga High School and am currently focused
-              on ML research.
-            </h2>
-          </div>
-          <div>
-            <p>
-              I'm an experienced full-stack developer and I love applying my
-              skills at hackathons. At school, I strive to help other students
-              discover the power of computer science as the president of both
-              the CS and AI clubs. I'm also very involved in schoolwide
-              leadership activities and currently serve as the ASB secretary.
-            </p>
-          </div>
-          <div>
-            <a href="#contact" class="button primary-button">Contact Me</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- research -->
-    <section id="research" class="bg-mw-bg-darker">
-      <div class="pcontainer mx-auto py-10 lg:py-14">
-        <div class="bg-mw-bg-primary rounded-sm py-4 text-center">
-          <h1
-            class="
-              text-2xl
-              md:text-3xl
-              uppercase
-              font-bold
-              text-mw-dark-brighter
-            "
-          >
-            Research
+        <div class="col-12 col-md">
+          <h1 class="mb-3">
+            <b>Hi, my name is <span>Mason Wang</span>.</b>
           </h1>
-        </div>
-        <div class="flex flex-col space-y-2 mt-6">
-          <div id="sft">
-            <div class="bg-mw-bg-primary rounded-sm px-3 py-3">
-              <h2
-                class="text-xl md:text-2xl font-semibold text-mw-dark-brighter"
-              >
-                Sparse Fusion for Multimodal Transformers
-              </h2>
-              <p class="text-sm">
-                Yi Ding*<sup>1</sup>, Alex Rich*<sup>1</sup>, <b>Mason Wang</b
-                ><sup>2</sup>, Noah Stier<sup>1</sup>, Matthew Turk<sup>3</sup>,
-                Pradeep Sen<sup>1</sup>, Tobias Höllerer<sup>1</sup>
-                <br />
-                <sup>1</sup>UC Santa Barbara, <sup>2</sup>Saratoga High School,
-                <sup>3</sup>Toyota Technological Institute at Chicago
-              </p>
-            </div>
-            <div class="bg-mw-bg-primary rounded-sm px-3 py-3 mt-2">
-              <p>
-                We present Sparse Fusion Transformers (SFT), a novel multimodal
-                fusion method for transformers that performs comparably to
-                existing state-of-the-art methods while demonstrating up to a
-                six-fold reduction in computation and memory requirements.
-              </p>
-              <p><i>Currently under review.</i></p>
-              <a 
-                class="button secondary-button mt-3"
-                href="https://arxiv.org/abs/2111.11992"
-                >View paper</a
-              >
-            </div>
-          </div>
-          <div id="lrm" class="mt-6">
-            <h2>
-              Interpolating Latent Representations to Increase Label Noise
-              Tolerance
-            </h2>
-            <p>
-              <b>Mason Wang</b><sup>1</sup>, Yi Ding<sup>2</sup>
-              <br />
-              <sup>1</sup>Saratoga High School, <sup>2</sup>UC Santa Barbara
-            </p>
-            <p>
-              We propose the use of a modality-agnostic label noise tolerant
-              technique involving training on interpolated latent
-              representations along with their labels, encouraging neural
-              networks to predict less confidently on these in-between examples.
-              Our technique reduces the memorization of corrupt labels, which
-              can alleviate the issue of noisy labels.
-            </p>
-            <a href="/assets/files/rmp-paper.pdf">View paper</a>
-          </div>
-          <div id="clefnet" class="mt-6">
-            <h2>
-              CLEFNET: Recurrent Autoencoders with Dynamic Time Warping for
-              Near-Lossless Music Compression and Minimal-Latency Transmission
-            </h2>
-            <p>
-              Vignav Ramesh*<sup>1</sup>, <b>Mason Wang</b>*<sup>1</sup>
-              <br />
-              <sup>1</sup>Saratoga High School
-              <br />
-              <i>(authors contributed equally)</i>
-            </p>
-            <p>
-              We propose an architecture (Latent Space) for a platform with
-              end-to-end, near-lossless audio transmission tailored specifically
-              to online joint music production. We discuss the usage of a
-              recurrent autoencoder (ClefNet), propose a new evaluation metric
-              (MSE-DTW), and detail the logistics of a live system
-              implementation.
-            </p>
-            <a href="https://www.preprints.org/manuscript/202103.0360/v1"
-              >View Paper</a
+          <h5 class="mb-2">
+            I am a junior at Saratoga High School and a student researcher at UC
+            Santa Barbara's
+            <u
+              ><a
+                href="https://ilab.cs.ucsb.edu/"
+                class="text-muted"
+                target="_blank"
+                >Four Eyes Lab</a
+              ></u
+            >, where I am advised by
+            <u
+              ><a
+                href="https://sites.cs.ucsb.edu/~holl/"
+                class="text-muted"
+                target="_blank"
+                >Tobias Höllerer</a
+              ></u
             >
+            (CS) and
+            <u
+              ><a
+                href="https://web.ece.ucsb.edu/~psen/"
+                class="text-muted"
+                target="_blank"
+                >Pradeep Sen</a
+              ></u
+            >
+            (EECS).
+          </h5>
+          <h5 class="mb-3">
+            I'm currently working on this site, but take a look at my resume!
+          </h5>
+          <div class="container px-md-0">
+            <div
+              class="row button-row no-gutters justify-content-center justify-content-md-start"
+            >
+              <div class="col-fit">
+                <a
+                  href="https://www.youtube.com/channel/UClE8VxxHfHjDLfX2SQ1P-jQ"
+                  target="_blank"
+                >
+                  <button class="resume">
+                    <i class="fa fa-file"></i>&nbsp; Resume
+                  </button></a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <hr />
-
-    <!-- projects -->
-    <section id="projects">
-      <h1>Projects</h1>
-      <h2>Archiscape</h2>
-      <h3>1st Place Overall @ LAHacks 2020</h3>
-      <p>
-        Archiscape is a PWA aimed at revolutionizing the fields of smart
-        infrastructure, urban planning, and home design. Won 1st Place Overall
-        at <a href="https://lahacks.com/">LAHacks 2020</a> (1,100+
-        participants), SoCal's largest hackathon and one of the world's largest
-        collegiate hackathons. Featured in
-        <a
-          href="https://losangeles.cbslocal.com/2020/04/01/coronavirus-ucla-hackathon-remote-learning/"
-          >CBS News</a
-        >,
-        <a
-          href="https://newsroom.ucla.edu/stories/uclas-virtual-hackathon-draws-more-than-1-000-students-to-develop-tech-for-l-a"
-          >The UCLA Newsroom</a
-        >,
-        <a href="https://buildforcovid19.io/archiscape/">Build for COVID-19</a>,
-        <a
-          href="https://www.scommerce.com/students-create-apps-for-covid-19-quarantine-remote-learning-for-ucla-hackathon/"
-          >Scommerce</a
-        >, and
-        <a
-          href="https://saratogafalcon.org/content/students-win-ucla-hacking-competition-archiscape/"
-          >The Saratoga Falcon</a
-        >.
-      </p>
-      <p>
-        <a href="https://devpost.com/software/archiscape">Learn More</a>,
-        <a href="https://github.com/SwiftWinds/Archiscape">Github</a>,
-        <a href="https://www.youtube.com/watch?v=ZoqPIaMaLKQ">Video Demo</a>
-      </p>
-
-      <h2>Latent Space</h2>
-      <h3>3rd Place Overall @ HackMIT</h3>
-      <p>
-        Latent Space is a decentralized video calling web app that utilizes
-        recurrent neural autoencoders with embeddings specifically for music to
-        transfer encoded (compressed) audio files with minimal latency.
-      </p>
-      <p>
-        Won 3rd Place Overall at
-        <a href="https://hackmit.org/">HackMIT 2020</a> (1,100+ competitors),
-        MIT's largest undergraduate hackathon and one of the world's largest
-        collegiate hackathons. Featured on
-        <a
-          href="https://medium.com/@sidraahmed/hackmit-2020-through-the-lens-of-a-judge-and-mentor-14fa703fe2cf"
-          >Medium</a
-        >.
-      </p>
-      <p>
-        <a href="https://www.youtube.com/watch?v=1GUb3c0IIh0">Video Demo</a>
-        <a href="https://github.com/SwiftWinds/hackmit">Github</a>,
-        <a href="https://latent-space.herokuapp.com/">Website</a>,
-        <a href="https://www.youtube.com/watch?v=1GUb3c0IIh0"
-          >Finalist Presentation</a
-        >
-      </p>
-
-      <h2>Centivize</h2>
-      <h3>3rd Place Overall @ COVIDathon 2020</h3>
-      <p>
-        Centivize is a blockchain/AI based PWA that allows users with conditions
-        less critical than COVID-19 to obtain diagnoses based on their medical
-        histories and requests that volunteers are incentivized to fulfill via
-        cryptocurrency.
-      </p>
-      <p>
-        Won 3rd Place Overall at
-        <a href="https://covidathon.devpost.com/">COVIDathon 2020</a>, the
-        world's largest decentralized AI workplace hackathon. Worked with the
-        Platform Team at SingularityNET to publish Centivize's summary and
-        similarity algorithms on SNET's dApp: available
-        <a href="centivize_sshot.png">here</a>. Centivize will appear on the
-        OceanProtocol compute to data platform in the near future.
-      </p>
-      <p>
-        <a href="https://github.com/rvignav/centivize">Github</a>,
-        <a href="https://devpost.com/software/centivize-v5o4c1">Devpost</a>,
-        <a href="https://www.youtube.com/watch?v=52Xu6-JoDy0">Video Demo</a>,
-        <a
-          href="https://docs.google.com/document/d/1lzzgj3KFrxRSNQ-Ci25lE39AneU-USD6mSKJzwb1hVs"
-          >Ocean Protocol Proposal</a
-        >
-      </p>
-
-      <h2>Other</h2>
-      <p>
-        Other hackathon projects on
-        <a href="https://devpost.com/MasonWang025">Devpost</a> (100% hackathon
-        win rate). Placed 1st Place @
-        <a href="http://ignitecsexpo.org/">IgniteCS Programming Expo</a> in 2019
-        (200+ competitors).
-      </p>
-    </section>
-
-    <hr />
-
-    <!-- education -->
-    <section id="education">
-      <h1>Education</h1>
-      <h2>Saratoga High School</h2>
-      <h3>August 2019 - June 2023</h3>
-      <h4>GPA: 4.42/4.00</h4>
-      <ul>
-        <li>ASB Secretary (2021-22)</li>
-        <li>Freshman Class President</li>
-        <li>Sophomore Class Treasurer</li>
-        <li>CS Club President</li>
-        <li>AI Club President</li>
-        <li>Varsity Basketball (since 9th)</li>
-        <li>Awarded AP Scholar With Honor</li>
-        <ul>
-          <li>
-            Scored 5s on AP Calculus BC, AP Computer Science, AP Macroeconomics,
-            AP Microeconomics
-          </li>
-          <li>
-            Currently enrolled in AP US History, AP Chemistry, AP Statistics
-          </li>
-        </ul>
-      </ul>
-
-      <h2>Foothill College</h2>
-      <h3>Concurrently Enrolled</h3>
-      <h4>GPA: 4.00</h4>
-      <ul>
-        <li>Computer Architecture and Organization (CS 10)</li>
-        <li>Firewalls and Threat Management (CS 53B)</li>
-        <li>Network Basics (CCNA) (CS 50A)</li>
-        <li>Cybersecurity Fundamentals (CS 53A)</li>
-        <li>Compute Engines in AWS (CS 55C)</li>
-        <li>Database Essentials in Amazon Web Services (CS 55B)</li>
-        <li>Introduction to Database Management Systems (CS 31A)</li>
-        <li>Introduction to Cloud Computing in Amazon Web Services (CS 55A)</li>
-      </ul>
-
-      <h2>West Valley College</h2>
-      <h3>Concurrently Enrolled</h3>
-      <h4>GPA: 4.00</h4>
-      <ul>
-        <li>Principles of Macroeconomics (ECON 001A and ECON 002A)</li>
-        <li>Principles of Microeconomics (ECON 001B and ECON 002B)</li>
-      </ul>
-
-      <h2>UC Santa Barbara</h2>
-      <h3>Research Mentorship Program</h3>
-      <ul>
-        <li>
-          Accepted into 2021 Research Mentorship Program (3.75% acceptance
-          rate).
-        </li>
-        <li>
-          INT 93P - Presentation Techniques in Interdisciplinary University
-          Research
-        </li>
-        <li>
-          INT 93R - Introduction to Interdisciplinary University Research
-          Techniques
-        </li>
-      </ul>
-
-      <h2>Certificates</h2>
-      <ul>
-        <li>
-          Oracle Certified Associate, Java SE 8 Programmer (<a
-            href="https://www.youracclaim.com/badges/e6d119d6-b483-49fc-8490-bd4d531a477a/linked_in_profile"
-            >signed certificate</a
-          >)
-        </li>
-        <li>
-          Stanford Machine Learning (Coursera course) (<a
-            href="https://www.coursera.org/account/accomplishments/verify/CQHJMZDNQ57U"
-            >signed certificate</a
-          >)
-        </li>
-        <li>
-          Deep Learning Specialization (consists of 5 Coursera courses) (<a
-            href="https://www.coursera.org/account/accomplishments/specialization/FYN27MN3HE7D"
-            >signed certificate</a
-          >)
-        </li>
-        <li>
-          MIT Entrepreneurship Bootcamps 1 and 2 (edX) (signed certificates
-          <a
-            href="https://courses.edx.org/certificates/6fc3e05cb45f4ef4a6f888afb1181f0f"
-            >1</a
-          >
-          and
-          <a
-            href="https://courses.edx.org/certificates/74766349e89449a98fdd35d3309dc65b"
-            >2</a
-          >)
-        </li>
-      </ul>
-    </section>
-
-    <!-- contact -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Contact form + links.</p>
-    </section>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/7593f939e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

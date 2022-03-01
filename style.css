@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap");
+
+::selection {
+  background: #a3030355;
+}
+
+::-moz-selection {
+  background: #a3030355;
+}
+
+body {
+  font-family: Montserrat;
+  background-color: white;
+}
+
+.page-container,
+.page-container > .row {
+  min-height: 100vh;
+}
+
+img {
+  user-select: none;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 3em;
+}
+
+h1 span {
+  color: #a30303;
+}
+
+h3 {
+  line-height: 125%;
+}
+
+button {
+  border: none;
+  padding: 0.42em 1.25em;
+  border-radius: 1px;
+  font-weight: 500;
+  user-select: none;
+  background-color: #e0e0e0;
+  transition: background-color 0.42s;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #ededed;
+}
+
+.button-row button {
+  margin-right: 0.42em;
+  margin-bottom: 0.42em;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.42em;
+  }
+
+  h5 {
+    font-size: 1.2em;
+  }
+}
+
+.linkedin {
+  background-color: #0e76a8;
+  color: white;
+}
+
+.linkedin:hover {
+  background-color: #1699d9;
+}
+
+.resume {
+  background: #c4302b;
+  padding: 10px 20px 10px 20px;
+  color: white;
+}
+
+.resume:hover {
+  background-color: #d63933;
+}
