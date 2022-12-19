@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap");
 
-::selection {
+/* ::selection {
   background: #a3030355;
 }
 
 ::-moz-selection {
   background: #a3030355;
-}
+} */
 
 body {
   font-family: Montserrat;
@@ -24,7 +24,8 @@ h1 {
 }
 
 h1 span {
-  color: #a30303;
+  color: #5381b0;
+  /* color: #a30303; */
 }
 
 h3 {
@@ -92,7 +93,7 @@ button:hover {
 }
 
 .resume {
-  background: #c4302b;
+  background: #5381b0;
   padding: 10px 20px 10px 20px;
   color: white;
 }
