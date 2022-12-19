@@ -71,7 +71,7 @@ button:hover {
 
   .page-container,
   .page-container>.row {
-    padding: 6em 0;
+    padding: 1em 1em;
   }
 }
 
